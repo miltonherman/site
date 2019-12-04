@@ -1,0 +1,86 @@
+@import './../../../styles/variables.scss';
+
+.feedback-wrapper {
+  background-color: $rich-blue;
+  padding: 20px 0;
+}
+
+.feedback {
+  display: flex;
+  flex-direction: row;
+
+  &__name-block-tablet {
+    display: none;
+    @media #{$lt-desktop-query} {
+      display: block;
+      padding-left: 150px;
+    }
+  }
+
+  &__photo-block {
+    margin-top: 80px;
+    max-width: 512px;
+    max-height: 512px;
+    width: 512px;
+    height: 512px;
+    min-width: 256px;
+    min-height: 256px;
+    flex: 1 1 50%;
+    position: relative;
+    background-image: url('./../../../../static/photo-gradient.png'),
+      url('./../../../../static/lukas.png');
+    background-position: center, center;
+    background-size: cover, cover;
+
+    @media #{$lt-desktop-query} {
+      margin-top: 40px;
+    }
+
+    .chat-icon {
+      position: absolute;
+      width: 100px;
+      height: auto;
+      right: -15%;
+      top: -15%;
+
+      @media #{$lt-desktop-query} {
+        top: -110px;
+        right: 0;
+        left: 0;
+      }
+    }
+  }
+
+  &__text-wrapper {
+    flex: 1 1 45%;
+    margin-left: 4%;
+  }
+
+  &__person-name {
+    margin-left: 60px;
+    @media #{$lt-desktop-query} {
+      display: none;
+    }
+  }
+
+  &__person-title {
+    opacity: 0.7;
+    margin-left: 60px;
+    @media #{$lt-desktop-query} {
+      display: none;
+    }
+  }
+
+  &__text-content {
+    padding-right: 20px;
+    opacity: 0.7;
+    margin-top: 60px;
+    margin-bottom: 20px;
+    line-height: 31px !important;
+    font-style: italic;
+
+    @media #{$lt-desktop-query} {
+      margin-top: 40px;
+    }
+  }
+}

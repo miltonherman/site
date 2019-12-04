@@ -31,6 +31,11 @@
   font-weight: bold;
   color: $black;
 
+  @media #{$lt-desktop-hd-query} {
+    font-size: 22px;
+    line-height: 25px;
+  }
+
   &.dark {
     color: $light;
   }
