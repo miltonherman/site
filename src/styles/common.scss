@@ -15,6 +15,11 @@
   line-height: 58px;
   font-weight: bold;
 
+  @media #{$lt-desktop-hd-query} {
+    font-size: 43px;
+    line-height: 49px;
+  }
+
   &.dark {
     color: $light;
   }
