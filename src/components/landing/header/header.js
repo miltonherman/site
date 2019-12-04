@@ -1,11 +1,12 @@
 import React from 'react';
 import './header.scss';
 import '../landing.scss';
+import LandingButton from '../button/button';
 class Header extends React.Component {
   render() {
     return (
       <div className={'header-wrapper'}>
-        <div className={'max-width-container header'}>
+        <div className={'max-width-container center-content header'}>
           <div className={'header__left'}>
             <img alt="" src="/topple-logo-white.svg" className={'header__logo'} />
 
@@ -21,8 +22,18 @@ class Header extends React.Component {
               <br />
               Our part is to help you build those teams with great software.
             </div>
+            <div className={'header__buttons'}>
+              <div className={'header__button'}>
+                <LandingButton color="red">Build a Team</LandingButton>
+              </div>
+              <div className={'header__button'}>
+                <LandingButton color="blue">Learn the Difference</LandingButton>
+              </div>
+            </div>
           </div>
-          <div className={'header__right'}></div>
+          <div className={'header__right'}>
+            <img alt="" src="/rectangle-white.svg" className={'header__image'} />
+          </div>
         </div>
       </div>
     );
