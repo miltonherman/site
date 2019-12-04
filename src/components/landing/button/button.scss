@@ -1,0 +1,21 @@
+.landing-button {
+  border-radius: 30px;
+  font-family: Helvetica;
+  font-size: 18px;
+  color: #ffffff;
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 20px;
+  border: none;
+  padding: 14px;
+  min-width: 180px;
+  &--red {
+    background: #ff5100;
+  }
+  &--blue {
+    background: #002539;
+  }
+  &--yellow {
+    background: #ed9a2d;
+  }
+}
