@@ -1,6 +1,7 @@
 import React from 'react';
 import './header.scss';
 import '../landing.scss';
+
 class Header extends React.Component {
   render() {
     return (

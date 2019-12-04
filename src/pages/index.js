@@ -7,8 +7,9 @@ import LearnAndRemember from '../components/landing/learn-and-remember';
 import ConfidentAndTransparent from '../components/landing/confident-and-transparent';
 import Feedback from '../components/landing/feedback';
 import CreateKnoowledge from '../components/landing/create-knowledge';
-import Footer from '../components/landing/footer';
+import Footer from '../components/landing/footer/footer';
 import '../styles/general.scss';
+
 class ToppleLanding extends React.Component {
   render() {
     return (
