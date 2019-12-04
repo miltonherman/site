@@ -19,7 +19,7 @@ class FocusAndScale extends React.Component {
         <div className={'focus-and-scale__right'}>
           <div className={'focus-and-scale__row'}>
             <div className={'focus-and-scale__icon mr-3'}>
-              <DirectionsRun style={{ color: '#DF4F2B', fontSize: 50 }}></DirectionsRun>
+              <DirectionsRun className={'landing__mat-icon'}></DirectionsRun>
             </div>
             <div className={'landing__description'}>
               Stop watching your braintrust walk out the door.
@@ -27,7 +27,7 @@ class FocusAndScale extends React.Component {
           </div>
           <div className={'focus-and-scale__row'}>
             <div className={'focus-and-scale__icon mr-3'}>
-              <ImportExport style={{ color: '#DF4F2B', fontSize: 50 }}></ImportExport>
+              <ImportExport className={'landing__mat-icon'}></ImportExport>
             </div>
             <div className={'landing__description'}>
               Understand what you need from each other and what you’re responsible for.
@@ -35,7 +35,7 @@ class FocusAndScale extends React.Component {
           </div>
           <div className={'focus-and-scale__row'}>
             <div className={'focus-and-scale__icon mr-3'}>
-              <LibraryBooks style={{ color: '#DF4F2B', fontSize: 50 }}></LibraryBooks>
+              <LibraryBooks className={'landing__mat-icon'}></LibraryBooks>
             </div>
             <div className={'landing__description'}>Repeatable work for hands-off growth.</div>
           </div>

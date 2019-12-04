@@ -17,10 +17,7 @@ class LearnAndRemember extends React.Component {
         <div className={'learn-and-remember__bottom'}>
           <div className={'learn-and-remember__column'}>
             <div className={'learn-and-remember__icon mr-3'}>
-              <EmojiObjectsIcon
-                style={{ color: '#DF4F2B', fontSize: 50 }}
-                className={'mb-2'}
-              ></EmojiObjectsIcon>
+              <EmojiObjectsIcon className={'landing__mat-icon mb-2'}></EmojiObjectsIcon>
             </div>
             <div className={'landing__description text-center'}>
               Discover unknown-unknowns and close knowledge gaps.
@@ -28,7 +25,7 @@ class LearnAndRemember extends React.Component {
           </div>
           <div className={'learn-and-remember__column'}>
             <div className={'learn-and-remember__icon mr-3'}>
-              <ChatIcon style={{ color: '#DF4F2B', fontSize: 50 }} className={'mb-2'}></ChatIcon>
+              <ChatIcon className={'landing__mat-icon mb-2'}></ChatIcon>
             </div>
             <div className={'landing__description text-center'}>
               Stop playing the telephone game. Share real information and feedback.
@@ -36,10 +33,7 @@ class LearnAndRemember extends React.Component {
           </div>
           <div className={'learn-and-remember__column'}>
             <div className={'learn-and-remember__icon mr-3'}>
-              <TrendingUpIcon
-                style={{ color: '#DF4F2B', fontSize: 50 }}
-                className={'mb-2'}
-              ></TrendingUpIcon>
+              <TrendingUpIcon className={'landing__mat-icon mb-2'}></TrendingUpIcon>
             </div>
             <div className={'landing__description text-center'}>
               Build actionable histories and adapt to changing context.
