@@ -11,22 +11,22 @@ class Footer extends React.Component {
               <div className={'footer__nav-list-title subheadline dark'}>Company</div>
               <ul className={'footer__nav-list'}>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Product (Product Page)</a>
+                  <a href="">Product (Product Page)</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>About and Roadmap</a>
+                  <a href="">About and Roadmap</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Pricing</a>
+                  <a href="">Pricing</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Team and Careers</a>
+                  <a href="">Team and Careers</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Privacy</a>
+                  <a href="">Privacy</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Contact</a>
+                  <a href="">Contact</a>
                 </li>
               </ul>
             </div>
@@ -34,25 +34,25 @@ class Footer extends React.Component {
               <div className={'footer__nav-list-title subheadline dark'}>Resources</div>
               <ul className={'footer__nav-list'}>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Blog</a>
+                  <a href="">Blog</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>API Docs</a>
+                  <a href="">API Docs</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Long-form Manifesto</a>
+                  <a href="">Long-form Manifesto</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Open Source Software</a>
+                  <a href="">Open Source Software</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Open Source Companies</a>
+                  <a href="">Open Source Companies</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Brain Drain Calculator</a>
+                  <a href="">Brain Drain Calculator</a>
                 </li>
                 <li className={'footer__nav-item subheadline-sm dark underline clickable'}>
-                  <a>Press</a>
+                  <a href="">Press</a>
                 </li>
               </ul>
             </div>
