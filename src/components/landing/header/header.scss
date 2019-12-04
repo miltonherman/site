@@ -1,12 +1,19 @@
 .header-wrapper {
   background-image: linear-gradient(154deg, #ff5100 0%, #ed9a2d 88%);
+  overflow: hidden;
 }
 
 .header {
-  margin: 0 auto;
   display: flex;
-  padding: 20px 0;
+  padding-left: 60px;
+  @media screen and (max-width: 960px) {
+    background-image: url('/rectangle-red.svg');
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+  }
   &__left {
+    padding: 20px 0;
+    flex: 1;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -15,7 +22,6 @@
     position: relative;
   }
   &__title {
-    font-family: Helvetica;
     font-size: 50px;
     color: #ebf2e8;
     text-align: left;
@@ -29,5 +35,24 @@
     font-weight: bold;
     text-align: left;
     margin-top: 20px;
+  }
+  &__buttons {
+    padding: 20px 0;
+    display: flex;
+  }
+  &__button {
+    margin-right: 20px;
+  }
+  &__right {
+    flex: 1;
+    width: 100%;
+    flex: 1;
+    @media screen and (max-width: 960px) {
+      display: none;
+    }
+  }
+  &__image {
+    position: absolute;
+    top: 15%;
   }
 }

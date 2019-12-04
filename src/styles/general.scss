@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:400,400i&display=swap');
 @import 'common.scss';
+@import 'utils.scss';
 
 body {
   margin: 0;
   font-family: 'Roboto', sans-serif;
+}
+
+.center-content {
+  margin: 0 auto;
 }
