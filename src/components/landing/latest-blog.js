@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
 class LatestBlog extends React.Component {
   render() {
-    return <div>Latest blog section</div>
+    return <div>Latest blog section</div>;
   }
 }
 
-export default LatestBlog
+export default LatestBlog;
