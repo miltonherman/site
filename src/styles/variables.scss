@@ -1,0 +1,17 @@
+$rich-blue: #002539;
+$black: #000000;
+$light: #ebf2e8;
+
+// Responsive breakpoints
+$tablet-view: 768px;
+$desktop-view: 960px;
+$desktop-hd-view: 1200px;
+
+$tablet-query: 'screen and (min-width: #{$tablet-view})';
+$lt-tablet-query: 'screen and (max-width: #{$tablet-view - 1})';
+
+$desktop-query: 'screen and (min-width: #{$desktop-view})';
+$lt-desktop-query: 'screen and (max-width: #{$desktop-view - 1})';
+
+$desktop-hd-query: 'screen and (min-width: #{$desktop-hd-view})';
+$lt-desktop-hd-query: 'screen and (max-width: #{$desktop-hd-view - 1})';
