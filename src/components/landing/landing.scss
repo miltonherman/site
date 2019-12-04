@@ -1,3 +1,25 @@
 .max-width-container {
-  max-width: 1200px;
+  max-width: 1480px;
+  margin: 0 auto;
+  padding: 0 30px;
+}
+
+.landing {
+  &__title {
+    font-size: 50px;
+    font-weight: bold;
+  }
+  &__description {
+    font-size: 25px;
+    font-weight: 100;
+  }
+  &__description-sm {
+    font-size: 18px;
+    color: #6d7278;
+    font-weight: 100;
+  }
+  &__mat-icon {
+    color: #df4f2b !important;
+    font-size: 50px !important;
+  }
 }
