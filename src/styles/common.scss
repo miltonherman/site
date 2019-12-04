@@ -1,0 +1,63 @@
+@import 'variables.scss';
+
+.clickable {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+// Text styling helpers
+
+.headline {
+  font-size: 50px;
+  line-height: 58px;
+  font-weight: bold;
+
+  &.dark {
+    color: $light;
+  }
+}
+
+.subheadline {
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: bold;
+  color: $black;
+
+  &.dark {
+    color: $light;
+  }
+}
+
+.subheadline-sm {
+  font-size: 18px;
+  line-height: 21px;
+  color: $black;
+
+  &.dark {
+    color: $light;
+  }
+}
+
+.headline-tertiary {
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: bold;
+  color: $black;
+
+  &.dark {
+    color: $light;
+  }
+}
+
+.list-item {
+  font-size: 14px;
+  line-height: 16px;
+  color: $black;
+
+  &.dark {
+    color: $light;
+  }
+}
