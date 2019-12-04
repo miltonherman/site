@@ -1,9 +1,9 @@
-import React from "react"
+import React from 'react';
 
 class CreateKnowledge extends React.Component {
   render() {
-    return <div>Create Knowledge section</div>
+    return <div>Create Knowledge section</div>;
   }
 }
 
-export default CreateKnowledge
+export default CreateKnowledge;
