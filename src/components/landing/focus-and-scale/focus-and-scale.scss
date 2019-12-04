@@ -1,0 +1,23 @@
+.focus-and-scale {
+  display: flex;
+  margin: 100px auto !important;
+
+  &__left {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    align-items: flex-start;
+  }
+  &__right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 2;
+    padding-left: 20px;
+  }
+  &__row {
+    display: flex;
+    margin: 20px 0;
+    align-items: center;
+  }
+}
