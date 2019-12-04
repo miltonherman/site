@@ -1,0 +1,20 @@
+.learn-and-remember {
+  display: flex;
+  margin: 100px auto !important;
+  align-items: center;
+  flex-direction: column;
+  &__top {
+    display: flex;
+    flex-direction: column;
+  }
+  &__bottom {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__column {
+    display: flex;
+    margin: 20px;
+    align-items: center;
+    flex-direction: column;
+  }
+}
