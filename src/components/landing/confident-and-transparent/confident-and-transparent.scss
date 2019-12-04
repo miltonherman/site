@@ -1,9 +1,11 @@
-@import './../../../styles/variables.scss';
-
-.focus-and-scale {
+.confident {
   display: flex;
+  flex-direction: column;
   margin: 100px auto !important;
-
+  &__body {
+    margin-top: 50px;
+    display: flex;
+  }
   &__left {
     display: flex;
     flex-direction: column;
@@ -19,12 +21,6 @@
   }
   &__row {
     display: flex;
-    margin: 20px 0;
     align-items: center;
-  }
-  &__icon {
-    @media #{$lt-desktop-query} {
-      display: none;
-    }
   }
 }

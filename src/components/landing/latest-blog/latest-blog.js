@@ -8,7 +8,7 @@ class LatestBlog extends React.Component {
     return (
       <div className={'latest-blog-wrapper'}>
         <div className={'max-width-container center-content latest-blog'}>
-          <div className={'latest-blog__row my-4'}>
+          <div className={'latest-blog__row mb-5'}>
             <div className={'latest-blog__title text-center landing__title mb-3'}>
               Latest Roadmap Headline
             </div>
@@ -20,7 +20,7 @@ class LatestBlog extends React.Component {
               <LandingButton color="yellow">Get the details</LandingButton>
             </div>
           </div>
-          <div className={'latest-blog__row my-4'}>
+          <div className={'latest-blog__row mt-5'}>
             <div className={'latest-blog__title text-center landing__title mb-3'}>
               Latest Blog Headline
             </div>
