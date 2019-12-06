@@ -11,7 +11,11 @@ import Footer from '../components/landing/footer/footer';
 import '../styles/general.scss';
 
 class ToppleLanding extends React.Component {
+  constructor() {
+    super();
+  }
   render() {
+    console.log(this);
     return (
       <Layout>
         <Header></Header>
@@ -28,3 +32,19 @@ class ToppleLanding extends React.Component {
 }
 
 export default ToppleLanding;
+
+export const query = graphql`
+  query FeedbackPageQuery1 {
+    allMarkdownRemark {
+      edges {
+        node {
+          frontmatter {
+            author
+            date
+            title
+          }
+        }
+      }
+    }
+  }
+`;

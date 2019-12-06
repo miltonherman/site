@@ -18,9 +18,13 @@
     "@material-ui/icons": "^4.5.1",
     "gatsby": "^2.18.4",
     "gatsby-plugin-sass": "^2.1.24",
+    "gatsby-source-filesystem": "^2.1.40",
+    "gatsby-transformer-remark": "^2.6.39",
     "node-sass": "^4.13.0",
+    "pure-react-carousel": "^1.24.1",
     "react": "^16.12.0",
-    "react-dom": "^16.12.0"
+    "react-dom": "^16.12.0",
+    "react-responsive-carousel": "^3.1.51"
   },
   "devDependencies": {
     "prettier": "^1.19.1"
