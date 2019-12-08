@@ -10,7 +10,10 @@ export default () => (
   <StaticQuery
     query={graphql`
       query HeadingQuery {
-        allMarkdownRemark {
+        allMarkdownRemark(
+          filter: {fileAbsolutePath: {regex: "/content\\/feedback/"}}
+          sort: { fields: [frontmatter___date], order: DESC }
+	) {
           edges {
             node {
               frontmatter {

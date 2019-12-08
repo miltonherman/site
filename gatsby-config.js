@@ -4,7 +4,14 @@ module.exports = {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `markdown`,
-        path: `${__dirname}/src/markdowns/feedback/`
+        path: `${__dirname}/src/content/`
+      }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `data`,
+        path: `${__dirname}/src/data/`
       }
     },
     `gatsby-plugin-sass`,
