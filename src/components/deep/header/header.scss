@@ -1,0 +1,36 @@
+.deepheader-wrapper {
+  overflow: hidden;
+  padding: 1em 0;
+  background-size: cover;
+}
+
+.deepheader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 60px;
+
+  &__logo {
+    width: 99px;
+  }
+  &__left {
+    flex: 1;
+  }
+  &__right {
+  }
+  &__right>a {
+    color: black;
+    padding: 0 1em;
+    font-weight: 600;
+  }
+}
+
+.deepheader-hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__container {
+    padding: 2em;
+    width: 70ch;
+  }
+}

@@ -1,0 +1,11 @@
+.latest-wrapper {
+  display: flex;
+  flex-direction: column;
+  background: #fafbf9;
+  align-items: center;
+  padding: 1px 0;
+}
+
+.latest-wrapper>div {
+  margin: 50px 0;
+}

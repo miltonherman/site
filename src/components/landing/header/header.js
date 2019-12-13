@@ -1,7 +1,7 @@
 import React from 'react';
 import './header.scss';
 import '../landing.scss';
-import LandingButton from '../button/button';
+import CommonButton from '../../common/button/button';
 
 class Header extends React.Component {
   render() {
@@ -25,10 +25,10 @@ class Header extends React.Component {
             </div>
             <div className={'header__buttons'}>
               <div className={'header__button'}>
-                <LandingButton color="red">Build a Team</LandingButton>
+                <CommonButton color="red">Build a Team</CommonButton>
               </div>
               <div className={'header__button'}>
-                <LandingButton color="blue">Learn the Difference</LandingButton>
+                <CommonButton color="blue">Learn the Difference</CommonButton>
               </div>
             </div>
           </div>

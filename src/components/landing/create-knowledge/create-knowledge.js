@@ -1,4 +1,5 @@
 import React from 'react';
+import CommonButton from '../../common/button/button';
 import './create-knowledge.scss';
 
 class CreateKnowledge extends React.Component {
@@ -17,8 +18,8 @@ class CreateKnowledge extends React.Component {
             </div>
           </div>
           <div className={'knowledge__buttons-wrapper'}>
-            <button className={'landing-button landing-button--red'}>Build a Team</button>
-            <button className={'landing-button landing-button--yellow'}>Learn the Tools</button>
+            <CommonButton color="red-gold">Build a Team</CommonButton>
+            <CommonButton color="yellow">Learn the Tools</CommonButton>
           </div>
         </div>
       </div>

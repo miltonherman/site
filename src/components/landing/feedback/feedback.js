@@ -9,9 +9,9 @@ import Carousel from 'react-bootstrap/Carousel';
 export default () => (
   <StaticQuery
     query={graphql`
-      query HeadingQuery {
+      query {
         allMarkdownRemark(
-          filter: {fileAbsolutePath: {regex: "/content\\/feedback/"}}
+          filter: {fileAbsolutePath: {regex: "/content\/feedback/"}, frontmatter: {draft: {eq: false}}}
           sort: { fields: [frontmatter___date], order: DESC }
 	) {
           edges {
@@ -42,7 +42,7 @@ export default () => (
                 </div>
                 <div className={'max-width-container feedback'}>
                   <div className={'feedback__photo-block'}>
-                    <img src="/ic_chat.svg" className={'chat-icon'} />
+                    <img alt={feedback.frontmatter.author} src="/ic_chat.svg" className={'chat-icon'} />
                   </div>
                   <div className={'feedback__text-wrapper'}>
                     <div className={'feedback__person-name headline dark'}>
