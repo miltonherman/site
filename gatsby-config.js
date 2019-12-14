@@ -2,7 +2,7 @@ module.exports = {
   siteMetadata: {
     title: 'Topple',
     menuLinks: [
-    	{ name: 'Product', link: '#', children: [
+    	{ name: 'Product', link: '/eap', children: [
     	  { name: 'Early Adopter Program', link: '/eap' },
     	  { name: 'Notes', link: '/notes' },
     	  { name: 'Teams', link: '/teams' },

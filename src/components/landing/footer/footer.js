@@ -49,7 +49,7 @@ export default () => (
               </div>
             </div>
             <div className={'footer__image-wrapper'}>
-              <img src="/transform-upright.png" className={'footer__logo'} />
+              <img alt="" src="/transform-upright.png" className={'footer__logo'} />
             </div>
           </div>
         </div>
