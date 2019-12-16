@@ -34,7 +34,7 @@ class Header extends React.Component {
                 </div>
                 <div className={'deepheader__right'}>
                   {entries.map(entry => (
-                    <Link to={entry.link}>{entry.name}</Link>
+                    <Link key={entry.name} to={entry.link}>{entry.name}</Link>
                   ))}
                   <CommonChip color="red-gold" link="/login">Login</CommonChip>  
                 </div>
