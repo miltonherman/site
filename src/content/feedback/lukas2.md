@@ -2,6 +2,7 @@
 title: 'Lukas Ruebbelke'
 author: Lukas2 Ruebbelke2
 role: Founder, Engineer, and Manager at VenturePlex
+draft: true
 date: 2019-08-09
 type: feedback
 ---

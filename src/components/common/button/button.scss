@@ -1,0 +1,51 @@
+.common-button {
+  border-radius: 30px;
+  font-family: Source Sans Pro;
+  font-weight: 400;
+  font-size: 18px;
+  color: #ffffff;
+  box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
+  letter-spacing: 1px;
+  text-align: center;
+  line-height: 20px;
+  border: none;
+  padding: 14px;
+  min-width: 180px;
+  outline: 0;
+  cursor: pointer;
+  &--red-gold {
+    background: linear-gradient(154deg, #ff5100 0%, #ed9a2d 88%);
+    box-shadow: 0px 4px 15px rgba(255, 128, 0, 0.8);
+  }
+  &--red {
+    background: #ff5100;
+  }
+  &--blue {
+    background: #002539;
+  }
+  &--yellow {
+    background: #ed9a2d;
+    box-shadow: 0px 4px 15px rgba(255, 128, 0, 0.8);
+  }
+  &--red--clear {
+    border: solid 2px #ff5100;
+    background: rgba(0,0,0,.15);
+  }
+  &--blue--clear {
+    border: solid 2px #002539;
+    background: rgba(0,0,0,.15);
+  }
+  &--yellow--clear {
+    border: solid 2px #ed9a2d;
+    background: rgba(0,0,0,.15);
+  }
+  &--white--clear {
+    border: solid 2px white;
+    background: rgba(0,0,0,.15);
+  }
+  &--black--clear {
+    border: solid 2px black;
+    background: rgba(0,0,0,.15);
+  }
+
+}

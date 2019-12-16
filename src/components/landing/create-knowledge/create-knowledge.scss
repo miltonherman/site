@@ -2,7 +2,7 @@
 
 .knowledge-wrapper {
   background-color: $light;
-  padding: 50px 0;
+  padding: 8em 0;
 }
 
 .knowledge {
@@ -64,7 +64,7 @@
       align-items: center;
       flex: 1 1 auto !important;
 
-      .landing-button {
+      .common-button {
         min-width: 230px;
 
         &:first-child {
@@ -73,7 +73,7 @@
       }
     }
 
-    .landing-button {
+    .common-button {
       max-width: 270px;
 
       &:first-child {

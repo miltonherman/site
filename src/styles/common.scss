@@ -28,7 +28,7 @@
 .subheadline {
   font-size: 25px;
   line-height: 29px;
-  font-weight: bold;
+  font-weight: 400;
   color: $black;
 
   @media #{$lt-desktop-hd-query} {

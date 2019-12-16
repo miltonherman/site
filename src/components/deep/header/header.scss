@@ -1,0 +1,40 @@
+.deepheader-wrapper {
+  overflow: hidden;
+  padding: 1em 0;
+  background-size: cover;
+}
+
+.deepheader {
+  display: flex;
+  flex-direction: row;
+  padding: 0 1em;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    width: 99px;
+  }
+  &>&__right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  &>&__right>a {
+    color: black;
+    padding: 0 1em;
+    font-weight: 600;
+  }
+  &-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container {
+      padding: 2em 0em;
+      width: 90ch;
+    }
+  }
+}
