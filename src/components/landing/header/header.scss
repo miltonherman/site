@@ -5,16 +5,36 @@
 
 .header {
   display: flex;
-  padding-left: 60px;
+  flex-direction: column;
   @media screen and (max-width: 960px) {
     background-image: url('/rectangle-red.svg');
     background-repeat: no-repeat;
     background-position: 100px 100px;
   }
-  &__left {
-    padding: 20px 0;
-    flex: 1;
+  &__nav {
     display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-items: stretch;
+    justify-content: space-between;
+    padding: 3em 0em;
+  }
+  &__nav a {
+    padding: 0 1em;
+    font-weight: 600;
+    font-size: 1.25em;
+    color: white;
+  }
+  &__nav a:hover {
+    color: white;
+  }
+  &__hero {
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 3em;
+  }
+  &__left {
+    flex: 1;
     flex-direction: column;
     align-items: flex-start;
   }
@@ -46,7 +66,6 @@
   &__right {
     flex: 1;
     width: 100%;
-    flex: 1;
     @media screen and (max-width: 960px) {
       display: none;
     }
@@ -56,3 +75,4 @@
     top: 15%;
   }
 }
+

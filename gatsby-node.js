@@ -1,11 +1,12 @@
 const path = require(`path`)
+const _ = require(`lodash`)
 
 exports.createPages = async ({ actions, graphql, reporter }) => {
   const { createPage } = actions
 
   const result = await graphql(`
     {
-      allMarkdownRemark(
+      pages: allMarkdownRemark(
         sort: { order: DESC, fields: [frontmatter___date] }
         limit: 1000
       ) {
@@ -18,6 +19,11 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
           }
         }
       }
+      tagsGroup: allMarkdownRemark(limit: 2000) {
+        group(field: frontmatter___tags) {
+          fieldValue
+        }
+      }
     }
   `)
 
@@ -27,7 +33,9 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
     return
   }
 
-  result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+  const tagTemplate = path.resolve(`src/templates/tags.js`)
+
+  result.data.pages.edges.forEach(({ node }) => {
     let type = node.fileAbsolutePath.match(/content\/(.*?)\//);
     if (node.frontmatter.path != null && type.length > 1) {
       createPage({
@@ -36,5 +44,14 @@ exports.createPages = async ({ actions, graphql, reporter }) => {
         context: {}, // additional data can be passed via context
       })
     }
-  })
+  });
+  result.data.tagsGroup.group.forEach(tag => {
+    createPage({
+      path: `/blog/tags/${_.kebabCase(tag.fieldValue)}`,
+      component: tagTemplate,
+      context: {
+        tag: tag.fieldValue,
+      }
+    });
+  });
 }

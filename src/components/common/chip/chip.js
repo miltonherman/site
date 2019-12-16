@@ -16,6 +16,24 @@ class CommonChip extends React.Component {
       case 'yellow':
         chipClass += 'common-chip--yellow';
         break;
+      case 'red-clear':
+        chipClass += 'common-chip--red--clear';
+        break;
+      case 'blue-clear':
+        chipClass += 'common-chip--blue--clear';
+        break;
+      case 'yellow-clear':
+        chipClass += 'common-chip--yellow--clear';
+        break;
+      case 'red-clear':
+        chipClass += 'common-chip--red--clear';
+        break;
+      case 'white-clear':
+        chipClass += 'common-chip--white--clear';
+        break;
+      case 'black-clear':
+        chipClass += 'common-chip--black--clear';
+        break;
       case 'red':
       default:
         chipClass += 'common-chip--red';

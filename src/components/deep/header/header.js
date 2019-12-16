@@ -5,7 +5,7 @@ import CommonChip from '../../common/chip/chip';
 
 class Header extends React.Component {
   render() {
-    const { title, subtitle } = this.props;
+    const { title, subtitle, details } = this.props;
     return (
       <StaticQuery
         query={graphql`
@@ -42,7 +42,12 @@ class Header extends React.Component {
               <div className={'max-width-container center-content deepheader-hero'}>
                 <div className={'deepheader-hero__container'}>
                   <h1>{title}</h1>
+		  {subtitle && 
                   <h4>{subtitle}</h4>
+                  }
+		  {details &&
+                  <h5>{details}</h5>
+                  }
                 </div>
               </div>
             </div>

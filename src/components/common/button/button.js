@@ -16,6 +16,21 @@ class CommonButton extends React.Component {
       case 'yellow':
         buttonClass += 'common-button--yellow';
         break;
+      case 'blue-clear':
+        buttonClass += 'common-button--blue--clear';
+        break;
+      case 'yellow-clear':
+        buttonClass += 'common-button--yellow--clear';
+        break;
+      case 'red-clear':
+        buttonClass += 'common-button--red--clear';
+        break;
+      case 'white-clear':
+        buttonClass += 'common-button--white--clear';
+        break;
+      case 'black-clear':
+        buttonClass += 'common-button--black--clear';
+        break;
       case 'red':
       default:
         buttonClass += 'common-button--red';

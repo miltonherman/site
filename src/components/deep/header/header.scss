@@ -6,31 +6,35 @@
 
 .deepheader {
   display: flex;
+  flex-direction: row;
+  padding: 0 1em;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  padding-left: 60px;
 
   &__logo {
     width: 99px;
   }
-  &__left {
-    flex: 1;
+  &>&__right {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    @media screen and (min-width: 960px) {
+      flex-direction: row;
+      align-items: center;
+    }
   }
-  &__right {
-  }
-  &__right>a {
+  &>&__right>a {
     color: black;
     padding: 0 1em;
     font-weight: 600;
   }
-}
-
-.deepheader-hero {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  &__container {
-    padding: 2em 1em;
-    width: 90ch;
+  &-hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &__container {
+      padding: 2em 0em;
+      width: 90ch;
+    }
   }
 }

@@ -31,29 +31,41 @@ class Header extends React.Component {
           return (
             <div className={'header-wrapper'}>
               <div className={'max-width-container center-content header'}>
-                <div className={'header__left'}>
-                  <img alt="" src="/topple-logo-white.svg" className={'header__logo'} />
-                  <div className={'header__title'}>
-                    You'll feel like you are <br />
-                    working together <br />
-                    for the first time.
+                <div className={'header__nav'}>
+                  <div><img alt="" src="/topple-logo-white.svg" className={'header__logo'} /></div>
+                  <div>
+                    {entries.map(entry => (
+                      <Link key={entry.link} to={entry.link}>{entry.name}</Link>
+                    ))}
                   </div>
-                  <div className={'header__description'}>
-                    Topple believes in teamwork.<br />
-                    That people achieve greatness by playing a part on a great team.<br />
-                    Our part is to help you build those teams with great software.
-                  </div>
-                  <div className={'header__buttons'}>
-                    <div className={'header__button'}>
-                      <CommonButton color="red">Build a Team</CommonButton>
-                    </div>
-                    <div className={'header__button'}>
-                      <CommonButton color="blue">Learn the Difference</CommonButton>
-                    </div>
+                  <div>
+                    <CommonButton color="yellow-clear" link="/login">Login</CommonButton>
                   </div>
                 </div>
-                <div className={'header__right'}>
-                  <img alt="" src="/rectangle-white.svg" className={'header__image'} />
+                <div className={'header__hero'}>
+                  <div className={'header__left'}>
+                    <div className={'header__title'}>
+                      You'll feel like you are <br />
+                      working together <br />
+                      for the first time.
+                    </div>
+                    <div className={'header__description'}>
+                      Topple believes in teamwork.<br />
+                      That people achieve greatness by playing a part on a great team.<br />
+                      Our part is to help you build those teams with great software.
+                    </div>
+                    <div className={'header__buttons'}>
+                      <div className={'header__button'}>
+                        <CommonButton color="yellow-clear">Learn the Difference</CommonButton>
+                      </div>
+                      <div className={'header__button'}>
+                        <CommonButton color="red-clear">Build a Team</CommonButton>
+                      </div>
+                    </div>
+                  </div>
+                  <div className={'header__right'}>
+                    <img alt="" src="/rectangle-white.svg" className={'header__image'} />
+                  </div>
                 </div>
              </div>
             </div>

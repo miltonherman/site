@@ -1,6 +1,5 @@
 import React from "react"
 import { graphql } from "gatsby"
-import Footer from '../components/landing/footer/footer';
 import Header from '../components/deep/header/header';
 import Layout from '../components/layout';
 import CommonButton from '../components/common/button/button';
@@ -28,7 +27,6 @@ export default function Template({
           </div>
         }
       </div>
-      <Footer/>
     </Layout>
   )
 }
@@ -43,9 +41,6 @@ export const pageQuery = graphql`
         title
         cta
         ctaref
-        spotlight {
-	  publicURL
-	}
       }
     }
   }

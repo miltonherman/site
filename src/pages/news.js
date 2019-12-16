@@ -1,8 +1,9 @@
 import React from 'react';
-import { StaticQuery, graphql, Link } from 'gatsby';
+import { StaticQuery, graphql } from 'gatsby';
 import Layout from '../components/layout';
 import Header from '../components/deep/header/header';
-import Footer from '../components/landing/footer/footer';
+import Item from '../components/common/contentlist/item';
+import List from '../components/common/contentlist/list';
 import '../styles/general.scss';
 
 export default () => (
@@ -18,6 +19,7 @@ export default () => (
 	      frontmatter {
 	        title
                 date
+                author
 		impact
 		path
 		ref
@@ -33,13 +35,12 @@ export default () => (
       let entries = data.allMarkdownRemark.edges.map(node => node.node.frontmatter);
       return (
         <Layout>
-          <Header title="Latest News" subtitle="" />
-          <ol>
-            {entries.map(entry => (
-	      <li><Link to={entry.path}>{entry.title}</Link><br/>{entry.impact}</li>
-	    ))}
-          </ol>
-          <Footer/>
+          <Header title="Latest News" subtitle="Announcements, roadmap updates, and other things that we're excited about sharing!" />
+          <div className={'max-width-container center-content'}>
+            <List>
+              {entries.map(entry => (<Item entry={entry}/>))}
+            </List>
+          </div>
         </Layout>
       );
     }}

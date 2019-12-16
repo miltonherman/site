@@ -1,5 +1,6 @@
 module.exports = {
   siteMetadata: {
+    siteUrl: 'https://www.example.com',
     title: 'Topple',
     menuLinks: [
     	{ name: 'Product', link: '/eap', children: [
@@ -22,7 +23,7 @@ module.exports = {
         {name: 'Pricing', ref: '/pricing'},
         {name: 'Team and Careers', ref: '/about/team'},
         {name: 'Privacy', ref: '/about/privacy'},
-        {name: 'Press', ref: '/about/press'},
+        {name: 'Press', ref: '/press'},
       ],
       resources: [
         {name: 'News', ref: '/news'},
@@ -42,7 +43,17 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-smartypants`,
-	  { resolve: `gatsby-remark-images`, options: { maxWidth: 590, showCaptions: true } }
+          `gatsby-remark-reading-time`,
+          { resolve: `gatsby-remark-copy-linked-files`,
+            options: { destinationDir: `static` }
+          },
+	  { resolve: `gatsby-remark-images`, 
+            options: { 
+              maxWidth: 590,
+              showCaptions: false, 
+              linkImagesToOriginal: true
+            } 
+          }
 	]
       }
     },
@@ -70,6 +81,30 @@ module.exports = {
         name: `data`,
         path: `${__dirname}/src/data/`
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "YOUR_GOOGLE_ANALYTICS_TRACKING_ID",
+        head: false,
+        anonymize: true,
+        respectDNT: true,
+        exclude: ["/preview/**", "/do-not-track/me/too/"],
+        pageTransitionDelay: 0,
+        optimizeId: "YOUR_GOOGLE_OPTIMIZE_TRACKING_ID",
+        experimentId: "YOUR_GOOGLE_EXPERIMENT_ID",
+        variationId: "YOUR_GOOGLE_OPTIMIZE_VARIATION_ID",
+        sampleRate: 5,
+        siteSpeedSampleRate: 10,
+        cookieDomain: "example.com",
+      },
+    },
+    `gatsby-plugin-sitemap`,
+    {
+      resolve: 'gatsby-plugin-mailchimp',
+      options: {
+        endpoint: 'https://gotopple.us12.list-manage.com/subscribe/post?u=a0d05d32dc9b6cfbf0f4271f2&amp;id=3de91380d6',
+      },
     }
   ]
 };
